@@ -1,0 +1,13 @@
+<h1>
+  <%= @Place %>
+</h1>
+ 
+ <ul>
+   <% for entry in @entries %>
+    <h2>
+      <% entry["Title"]%>
+    </h2>
+   <% end %>
+</ul>
+
+<p><a href="/entries/new">New Post</a></p>
